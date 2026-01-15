@@ -91,14 +91,14 @@ poetry run python dictate.py
 
 ### macOS: Run as Background Process
 
-To use with other terminal apps like Claude Code:
+To use with other terminal apps like Claude Code, Codex etc:
 
 1. Start the dictation service in the background:
    ```bash
    nohup poetry run python dictate.py > /dev/null 2>&1 &
    ```
 
-2. Switch to your target app (iTerm, VS Code, etc.)
+2. Switch to your target app (iTerm, Claude Code, Codex, etc.)
 
 3. Hold **F12** to record, release to transcribe - text types at your cursor
 
@@ -106,6 +106,8 @@ To stop the background process:
 ```bash
 pkill -f "python dictate.py"
 ```
+
+To use from non-terminal apps, hold F12 to record and transcribe, the text is copied to clipboard.
 
 ### Linux: Run as a systemd Service
 
